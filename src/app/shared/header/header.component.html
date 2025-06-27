@@ -1,17 +1,13 @@
-<header>
-<div class="col-nd-3 mb-2 mb-md-0">
-  <a href="/" class="d-inline-flex link-body-emphasis tex-decotarion-none">
-  </a>
-</div>
-<ul class="ul">
-  <li><a href="#" class="Home">Home</a></li>
-  <li><a href="#" class="Heróis" [routerLink]="['/heroes']" routerLinkActive="route-link-active">Heróis</a></li>
-  <li><a href="#" class="Vilões">Vilões</a></li>
-  <li><a href="#" class="FAQs">FAQs</a></li>
-  <li><a href="#" class="About">About</a></li>
-</ul>
-<div class="baixo">
- <button type="button" class="Login">Login</button>
- <button type="button" class="Registrar">Registrar</button>
-</div>
+<header class="main-header">
+  <div class="logo-area">
+    <a href="/" class="logo">MyHero</a>
+  </div>
+
+ <ul class="nav-links">
+    <li><a href="#" class="nav-item">Home</a></li>
+    <li><a href="#" class="nav-item"[routerLink]="['/heroes']" routerLinkActive="route-link-active" >Heróis</a></li>
+    <li><a href="#" class="nav-item"[routerLink]="['/villains']" routerLinkActive="route-link-active" >Vilões</a></li>
+    <li><a href="#" class="nav-item">FAQs</a></li>
+    <li><a href="#" class="nav-item">Sobre</a></li>
+  </ul>
 </header>

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VillainsComponent } from './villains.component';
+import { HeaderModule } from "../shared/header/header.module";
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -9,8 +11,10 @@ import { VillainsComponent } from './villains.component';
     VillainsComponent
   ],
   imports: [
-    CommonModule
-  ],
+    CommonModule,
+    AppRoutingModule,
+    HeaderModule
+],
   exports: [
     VillainsComponent
   ]

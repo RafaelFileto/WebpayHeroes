@@ -11,12 +11,16 @@ import { FooterModule } from './shared/footer/footer.module';
 import { HeaderModule } from './shared/header/header.module';
 import { CarouselModule } from './shared/carousel/carousel.module';
 import { CreateHeroesComponent } from './create-heroes/create-heroes.component';
+import { VillainsModule } from './villains/villains.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateVillainsComponent } from './create-villains/create-villains.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateHeroesComponent
+    CreateHeroesComponent,
+    CreateVillainsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,8 +31,11 @@ import { CreateHeroesComponent } from './create-heroes/create-heroes.component';
     FooterModule,
     HeaderModule,
     CarouselModule,
+    VillainsModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

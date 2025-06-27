@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-heroes.component.scss']
 })
 export class CreateHeroesComponent {
+  name: string = '';
+  age: number = 0;
+  power: string = '';
+  gender: string = '';
 
+ submitHero(){
+    console.log(this.name);
+    console.log(this.age);
+    console.log(this.power);
+    console.log(this.gender);
+  }
 }

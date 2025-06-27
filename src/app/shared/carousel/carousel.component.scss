@@ -1,4 +1,79 @@
-.carousel-inner
-{
-  width: 1000px;
+/* Estilo geral do carousel */
+#carouselExampleIndicators {
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin: 2rem auto;
+}
+
+/* Imagens dentro do carousel */
+#carouselExampleIndicators .carousel-item img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  filter: brightness(0.9);
+  transition: transform 0.5s ease;
+}
+
+#carouselExampleIndicators .carousel-item:hover img {
+  transform: scale(1.02);
+}
+
+/* Indicadores (bolinhas) */
+.carousel-indicators [data-bs-target] {
+  background-color: #61dafb;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ffffff;
+  border: 2px solid #61dafb;
+}
+
+/* Botões de navegação (esquerda/direita) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  background-image: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  font-size: 2rem;
+  color: #61dafb;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon::after {
+  content: "\f104"; /* Ícone de seta para esquerda (FontAwesome) */
+  left: -10px;
+}
+
+.carousel-control-next-icon::after {
+  content: "\f105"; /* Ícone de seta para direita (FontAwesome) */
+  right: -10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    max-height: 300px;
+  }
+
+  #carouselExampleIndicators .carousel-item img {
+    height: 300px;
+  }
 }

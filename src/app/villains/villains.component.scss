@@ -1,0 +1,17 @@
+.btn-visualizar {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f10404;
+  color: #1e1f26;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-visualizar:hover {
+  background-color: #f10404;
+  transform: translateY(-2px);
+}

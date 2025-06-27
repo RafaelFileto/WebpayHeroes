@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20232a;
+  padding: 1rem 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo-area .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links .nav-item {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-item:hover {
+  color: #61dafb;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.auth-buttons .btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons .login {
+  background-color: transparent;
+  border: 1px solid #61dafb;
+  color: #61dafb;
+}
+
+.auth-buttons .login:hover {
+  background-color: #61dafb;
+  color: #20232a;
+}
+
+.auth-buttons .register {
+  background-color: #61dafb;
+  color: #20232a;
+}
+
+.auth-buttons .register:hover {
+  background-color: #4dbbe6;
+}
