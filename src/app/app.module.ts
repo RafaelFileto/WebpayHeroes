@@ -14,6 +14,8 @@ import { CreateHeroesComponent } from './create-heroes/create-heroes.component';
 import { VillainsModule } from './villains/villains.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateVillainsComponent } from './create-villains/create-villains.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { CreateVillainsComponent } from './create-villains/create-villains.compo
     NgbModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
