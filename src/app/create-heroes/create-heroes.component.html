@@ -4,7 +4,7 @@
 
   <div class="form-group">
     <label for="exampleInputName" class="form-label">Nome do Herói</label>
-    <input type="text" formControlName="name" class="form-control" id="exampleInputName1" placeholder="Ex: Capitão Valente">
+    <input type="text" formControlName="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Ex: Capitão Valente">
     <div class="form-text">Cadastre o seu Herói.</div>
     <div *ngIf="controle('name')?.errors?.['required']">
      <small>
@@ -15,7 +15,7 @@
 
   <div class="form-group">
     <label for="exampleInputAge" class="form-label">Idade do Herói</label>
-    <input type="text" formControlName="age" class="form-control" id="exampleInputIdade1" placeholder="Ex: 30">
+    <input type="text" formControlName="age" class="form-control" id="exampleInputIdade1" aria-describedby="idadeHelp" placeholder="Ex: 30">
     <div class="form-text">Preencha a idade do Herói.</div>
     <div *ngIf="controle('name')?.errors?.['required']">
       <small>
@@ -26,7 +26,7 @@
 
   <div class="form-group">
     <label for="exampleInputPower" class="form-label">Força do seu Herói</label>
-    <input type="text" formControlName="power" class="form-control" id="exampleInputPower1" placeholder="Ex: Super Força">
+    <input type="text" formControlName="power" class="form-control" id="exampleInputPower1" aria-describedby="powerHelp" placeholder="Ex: Super Força">
     <div class="form-text">Informe a força do Herói.</div>
     <div *ngIf="controle('name')?.errors?.['required']">
       <small>
@@ -37,7 +37,7 @@
 
   <div class="form-group">
     <label for="exampleInputGender" class="form-label">Gênero do Herói</label>
-    <input type="text" formControlName="gender" class="form-control" id="exampleInputGender1" placeholder="Ex: Masculino, Feminino, Outro">
+    <input type="text" formControlName="gender" class="form-control" id="exampleInputGender1" aria-describedby="genderHelp" placeholder="Ex: Masculino, Feminino, Outro">
     <div class="form-text">Informe o gênero do seu Herói.</div>
     <div *ngIf="controle('name')?.errors?.['required']">
       <small>
@@ -46,7 +46,7 @@
      </div>
   </div>
 
-  <button type="submit" class="btn btn-submit">Enviar</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 </div>
 

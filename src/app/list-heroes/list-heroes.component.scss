@@ -1,0 +1,162 @@
+/* 1. Estilização básica da tabela com Bootstrap */
+table {
+  width: 100%;
+}
+
+/* 2. Estilo no cabeçalho */
+table thead th {
+  background-color: #007bff; /* azul */
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+/* 3. Linhas com alternância de cor (zebra-striping) */
+table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+/* 4. Efeito hover */
+table.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* 5. Bordas em células e bordas externas */
+table.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+table.table-bordered td,
+table.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+
+/* 6. Responsividade para dispositivos móveis */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* 7. Espaçamento e alinhamento */
+table td, table th {
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+/* 8. Botões centralizados nas ações */
+.btn-primary, .btn-danger {
+  margin-right: 0.5rem;
+}
+
+/* 9. Container da tabela com cantos arredondados */
+.hero-container {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* 10. Ajuste do título */
+#titulo {
+  text-align: center;
+  color: #343a40;
+}
+/* Estilização geral do conteúdo do modal */
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+  background-color: #0d6efd;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Botão de fechar */
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Corpo do modal */
+.modal-body {
+  padding: 15px 0;
+}
+
+/* Formulário */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.text-danger {
+  font-size: 0.85rem;
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+/* Rodapé do modal */
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+

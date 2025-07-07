@@ -16,13 +16,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateVillainsComponent } from './create-villains/create-villains.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateHeroesComponent,
-    CreateVillainsComponent
+    CreateVillainsComponent,
+    ListHeroesComponent
   ],
   imports: [
     BrowserModule,

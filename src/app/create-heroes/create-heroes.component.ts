@@ -1,13 +1,13 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HeroesService } from './../services/heroes.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-create-heroes',
   templateUrl: './create-heroes.component.html',
-  styleUrls: ['./create-heroes.component.scss']
+  styleUrls: ['./create-heroes.component.scss'],
 })
-export class CreateHeroesComponent {
+export class CreateHeroesComponent implements OnInit {
 
   constructor (private heroesService: HeroesService, private fb: FormBuilder){}
 
@@ -22,14 +22,14 @@ export class CreateHeroesComponent {
     }
     ,
     {
-      validor: this.senhasIguaisValidator
+      validator: this.senhasIguaisValidator
     }
   )
 }
 
-  private senhasIguaisValidator(formGroup: FormGroup){
+  private senhasIguaisValidator(formGroup: FormGroup ){
     const senha = formGroup.get('senha')?.value;
-    const confirmSenha = formGroup.get('senha')?.value;
+    const confirmSenha = formGroup.get('confirmSenha')?.value;
     return senha === confirmSenha ? null: {senhasDiferentes: true};
 
   }
@@ -53,6 +53,7 @@ export class CreateHeroesComponent {
     this.heroesService.createHero(hero).subscribe({
       next: (response) => {
         alert(response.message);
+        this.heroForm.reset();
       },
       error: (error) => {
         console.error('Erro ao criar Herói:', error);

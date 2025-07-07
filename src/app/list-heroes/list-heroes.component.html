@@ -1,0 +1,39 @@
+<div class="col-lg-6 mx-auto">
+  <p id="titulo" class="fs-5 mb-4">Listagem de Heróis</p>
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <div class="feature col">
+      <div class="hero-container">
+        <table>
+          <thead>
+            <tr>
+              <th class="text-black cabecalho">Nome</th>
+              <th class="text-black">Poder</th>
+              <th class="text-black">Idade</th>
+              <th class="text-black">Gênero</th>
+              <th class="text-black">Ações</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let hero of heroes">
+            <tr>
+              <td>{{ hero.name }}</td>
+              <td>{{ hero.power }}</td>
+              <td>{{ hero.age }}</td>
+              <td>{{ hero.gender }}</td>
+              <td>
+                <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#janelaModal"
+                (click)="startEdit(hero)"
+                >
+                Editar
+              </button>
+                <button class="btn btn-danger" (click)="deleteHero(hero.id)">Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+        

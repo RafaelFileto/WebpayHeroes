@@ -9,6 +9,7 @@ import { CreateHeroesComponent } from './create-heroes/create-heroes.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CreateVillainsComponent } from './create-villains/create-villains.component';
 import { VillainsComponent } from './villains/villains.component';
+import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent, pathMatch: "full"},
@@ -21,6 +22,8 @@ const routes: Routes = [
   {path: "footer", component: FooterComponent, pathMatch: "full"},
   {path: "create-heroes", component: CreateHeroesComponent, pathMatch: "full"},
   {path: "create-villains", component: CreateVillainsComponent, pathMatch: "full"},
+  {path: "list-heroes", component: ListHeroesComponent, pathMatch: "full"},
+
 
  ];
 
